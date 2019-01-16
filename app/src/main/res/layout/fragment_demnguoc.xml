@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtGioDemNguoc"
+            android:textSize="25sp"
+            android:hint=" 00"
+            android:inputType="number"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Giờ"
+            android:layout_marginRight="10dp"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtPhutDemNguoc"
+            android:textSize="25sp"
+            android:hint=" 00"
+            android:inputType="number"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Phút"
+            android:layout_marginRight="10dp"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtGiayDemNguoc"
+            android:textSize="25sp"
+            android:hint=" 00"
+            android:inputType="number"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Giây"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progressbar"
+        android:secondaryProgress="0" />
+
+    <TextView
+        android:id="@+id/txtGiayDemNguoc"
+        android:text="0 s"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_below="@id/progressBar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_rotate"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

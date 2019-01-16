@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ProgressBar
+        android:id="@+id/progressBarBamGio"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progressbar"
+        android:secondaryProgress="0" />
+
+    <TextView
+        android:id="@+id/txtH"
+        android:text="00:"
+        android:textSize="25sp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtM"
+        android:text="00:"
+        android:layout_toRightOf="@id/txtH"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtS"
+        android:text="00"
+        android:layout_toRightOf="@+id/txtM"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtMili"
+        android:text="00"
+        android:layout_toRightOf="@id/txtS"
+        android:layout_marginLeft="5px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabStartBamGio"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_below="@+id/progressBarBamGio"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabStopBamGio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBarBamGio"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/ic_media_pause" />
+
+    <ImageButton
+        android:id="@+id/btnAddBamGio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_below="@+id/progressBarBamGio"
+        android:layout_marginLeft="20dp"
+        android:src="@android:drawable/ic_menu_recent_history" />
+
+    <ImageButton
+        android:id="@+id/btnResetBamGio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBarBamGio"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/fabStartBamGio"
+        android:background="@null"
+        android:src="@android:drawable/ic_menu_rotate" />
+
+    <ListView
+        android:id="@+id/lstBamGio"
+        android:layout_below="@+id/fabStartBamGio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</RelativeLayout>

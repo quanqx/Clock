@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtThoiGian"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="12:11"
+            android:textSize="40sp" />
+
+        <Switch
+            android:id="@+id/btnSwitchOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chkLapLai"
+            android:text="Lặp lại"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/chkRung"
+            android:text="Rung"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnNhacChuong"
+            android:text="Nhạc chuông"
+            android:textSize="20sp"
+            android:gravity="left|center_vertical"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnXoa"
+            android:text="Xóa"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#ff00"
+            android:background="@null"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
